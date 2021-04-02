@@ -2,9 +2,9 @@
 
 Extrai uma lista de tokens à partir de uma lista de ingredientes em linguagem natural retirado de receitas da culinária brasileira.
 
-**Instalação**
+**Required**
 ```
-npm i ingredientes-pln
+node version > 12
 ```
 
 **Uso**
