@@ -1,4 +1,4 @@
-# Ingredientes PLN (Processamento de linguagem natural)
+# Processamento de linguagem natural de ingredientes
 
 Extrai uma lista de tokens à partir de uma lista de ingredientes em linguagem natural retirado de receitas da culinária brasileira.
 
