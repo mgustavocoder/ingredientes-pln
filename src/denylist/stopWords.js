@@ -1,0 +1,20 @@
+module.exports = [
+    'a',
+    'al',
+    'ao',
+    'com',
+    'da',
+    'de',
+    'do',
+    'e',
+    'e',
+    'em',
+    'na',
+    'no',
+    'o',
+    'ou',
+    'para',
+    'pra',
+    'sem',
+    'tipo'
+]

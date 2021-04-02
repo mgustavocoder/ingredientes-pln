@@ -1,0 +1,47 @@
+{
+  "name": "ingredientes-pln",
+  "version": "1.0.0-alpha",
+  "description": "Extrai ingredientes como tokens de uma lista de ingredientes em linguagem natural encontrada normalmente em receitas da culinária brasileira.",
+  "main": "index.js",
+  "author": "mgustavocoder@gmail.com",
+  "license": "ISC",
+  "keywords": [
+    "pln",
+    "processamento de linguagem natural",
+    "ingredientes",
+    "receitas",
+    "culinária",
+    "cozinha"
+  ],
+  "scripts": {
+    "test": "nyc ./node_modules/.bin/mocha tests/**/*.test.js",
+    "test:watch": "./node_modules/.bin/mocha tests/**/*.test.js --watch"
+  },
+  "nyc": {
+    "all": true,
+    "check-coverage": true,
+    "branches": 100,
+    "lines": 100,
+    "functions": 100,
+    "statements": 100,
+    "include": [
+      "**/*.js"
+    ],
+    "exclude": [
+      "**/node_modules/**",
+      "**/tests/**",
+      "**/coverage/**"
+    ]
+  },
+  "dependencies": {
+    "lodash.isempty": "^4.4.0",
+    "natural": "^5.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.3",
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "mocha": "^8.3.0",
+    "nyc": "^15.1.0"
+  }
+}
