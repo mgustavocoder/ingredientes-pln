@@ -7,6 +7,9 @@ Extrai uma lista de tokens à partir de uma lista de ingredientes em linguagem n
 node version > 12
 ```
 
+**Github**
+https://github.com/mgustavocoder/ingredientes-pln
+
 **Uso**
 ```
 const processarIngredientes = require('ingredientes-pln')
