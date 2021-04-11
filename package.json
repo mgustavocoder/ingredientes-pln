@@ -23,6 +23,10 @@
     "lines": 100,
     "functions": 100,
     "statements": 100,
+    "reporter": [
+      "text",
+      "text-summary"
+    ],
     "include": [
       "**/*.js"
     ],
@@ -33,6 +37,7 @@
     ]
   },
   "dependencies": {
+    "ingredient-instruction-classifier": "^1.1.0",
     "lodash.isempty": "^4.4.0",
     "natural": "^5.0.1"
   },

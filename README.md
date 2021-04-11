@@ -1,6 +1,4 @@
-# Processamento de linguagem natural de ingredientes
-
-Extrai tags (ingredientes simples) de uma lista de ingredientes em linguagem natural encontrada em receitas da culinária brasileira.
+# Extrai tags (ingredientes simples) de uma lista de ingredientes em linguagem natural encontrada em receitas da culinária brasileira.
 
 **Required**
 ```
