@@ -2,7 +2,7 @@
 
 **Required**
 ```
-node version > 12
+node version > 12 
 ```
 
 **Github**
