@@ -37,7 +37,6 @@
     ]
   },
   "dependencies": {
-    "ingredient-instruction-classifier": "^1.1.0",
     "lodash.isempty": "^4.4.0",
     "natural": "^5.0.1"
   },
