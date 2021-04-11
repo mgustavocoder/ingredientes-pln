@@ -1,13 +1,11 @@
 {
   "name": "ingredientes-pln",
   "version": "1.0.2-alpha",
-  "description": "Extrai ingredientes como tokens de uma lista de ingredientes em linguagem natural encontrada normalmente em receitas da culinária brasileira.",
+  "description": "Extrai tags (ingredientes simples) de uma lista de ingredientes em linguagem natural encontrada em receitas da culinária brasileira.",
   "main": "index.js",
   "author": "mgustavocoder@gmail.com",
   "license": "ISC",
   "keywords": [
-    "pln",
-    "processamento de linguagem natural",
     "ingredientes",
     "receitas",
     "culinária",
