@@ -1,3 +1,1 @@
-module.exports = list => {
-    return list.join(' ').split(' ')
-}
+module.exports = (list) => list.join(' ').split(' ');

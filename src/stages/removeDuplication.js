@@ -1,3 +1,1 @@
-module.exports = (list) => {
-    return [...new Set(list)]
-}
+module.exports = (list) => [...new Set(list)];

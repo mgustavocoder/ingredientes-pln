@@ -1,7 +1,7 @@
 module.exports = [
-    'decorar',
-    'empanar',
-    'fritar',
-    'pincelar',
-    'untar'
-]
+  'decorar',
+  'empanar',
+  'fritar',
+  'pincelar',
+  'untar',
+];

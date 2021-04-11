@@ -1,6 +1,4 @@
-module.exports = (radix, word) => {
-    return {
-        radix,
-        word
-    }
-}
+module.exports = (radix, word) => ({
+  radix,
+  word,
+});
