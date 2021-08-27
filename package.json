@@ -1,7 +1,7 @@
 {
   "name": "ingredientes-pln",
-  "version": "1.0.5-alpha",
-  "description": "Extrai tags (ingredientes simples) de uma lista de ingredientes em linguagem natural encontrada em receitas da culinária brasileira.",
+  "version": "0.0.6-alpha",
+  "description": "Extrai tags (ingredientes simples) de uma lista de ingredientes em linguagem natural tirado de receitas na internet da culinária brasileira.",
   "main": "index.js",
   "author": "mgustavocoder@gmail.com",
   "license": "ISC",

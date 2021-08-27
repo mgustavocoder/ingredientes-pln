@@ -1,8 +1,16 @@
-# Extrai tags (ingredientes simples) de uma lista de ingredientes em linguagem natural encontrada em receitas da culinária brasileira.
+## Descrição:
+Extrai tags (ingredientes simples) de uma lista de ingredientes em linguagem natural tirado de receitas na internet da culinária brasileira.
 
 **Required**
 ```
 node version > 12 
+```
+
+**NPM**
+https://www.npmjs.com/package/ingredientes-pln
+
+```
+npm i ingredientes-pln
 ```
 
 **Github**
