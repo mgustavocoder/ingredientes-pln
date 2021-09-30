@@ -1,5 +1,5 @@
 ## Descrição:
-Extrai tags (ingredientes simples) de uma lista de ingredientes em linguagem natural tirado de receitas na internet da culinária brasileira.
+Extrai tokens de uma lista de ingredientes em linguagem natural tirado de receitas da culinária brasileira.
 
 **Required**
 ```
@@ -55,5 +55,3 @@ const tokens = processarIngredientes([...])
   "margarina"
 ]
 ```
-
-*Idealmente os tokens serão ingredientes puros, porém algumas palavras contidas na lista original também podem ser retornados.*

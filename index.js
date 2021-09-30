@@ -1,14 +1,11 @@
+const natural = require('natural');
+const isEmpty = require('lodash.isempty');
 const normalize = require('./src/stages/normalize');
 const tokenize = require('./src/stages/tokenize');
 const stem = require('./src/stages/stem');
-const removeDenyWords = require('./src/stages/removeDenyWords');
 const removeEmptyToken = require('./src/stages/removeEmptyToken');
 const removeDuplication = require('./src/stages/removeDuplication');
-const adjetives = require('./src/denylist/adjetives');
-const stopWords = require('./src/denylist/stopWords');
-const packages = require('./src/denylist/packages');
-const adverbs = require('./src/denylist/adverbs');
-const verbs = require('./src/denylist/verbs');
+const tokens = require('./src/allowlist/tokens');
 
 function isInvalidInput(listOfNaturalLanguageIngredients) {
   return !listOfNaturalLanguageIngredients
@@ -25,16 +22,22 @@ module.exports = (listOfNaturalLanguageIngredients) => {
   const tokenList = tokenize(nomalizedList);
   const tokenObjectList = stem.getListOfObjects(tokenList);
 
-  const denyWords = [
-    ...adjetives,
-    ...stopWords,
-    ...packages,
-    ...adverbs,
-    ...verbs,
-  ];
-  const allowedTokenObjects = removeDenyWords(tokenObjectList, denyWords);
-  const notBlankTokenObjects = removeEmptyToken(allowedTokenObjects);
-  const resultList = notBlankTokenObjects.map((tokenObject) => tokenObject.word);
+  const notBlankTokenObjects = removeEmptyToken(tokenObjectList);
+  let resultList = notBlankTokenObjects.map((tokenObject) => tokenObject.word);
+
+  const nounInflector = new natural.NounInflector();
+
+  resultList = resultList.map((token) => nounInflector.singularize(token));
+  const tokensSingularized = tokens.map((token) => nounInflector.singularize(token));
+
+  resultList = resultList.map((token) => {
+    if (tokensSingularized.includes(token)) {
+      return token;
+    }
+    return '';
+  });
+
+  resultList = resultList.filter((token) => !isEmpty(token));
 
   return removeDuplication(resultList);
 };
