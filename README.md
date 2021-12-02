@@ -41,17 +41,20 @@ const tokens = processarIngredientes([...])
 **Exemplo de saída:**
 ```
 [
-  "leite',
-  "sal',
-  "pimenta-do-reino',
-  "noz-moscada',
-  "orégano',
-  "batata',
-  "queijo',
-  "muçarela',
-  "tomate',
-  "presunto',
-  "apresuntado',
-  "margarina"
+    'leite',
+    'creme',
+    'sal',
+    'pimenta',
+    'reino',
+    'noz',
+    'moscada',
+    'orégano',
+    'batata',
+    'queijo',
+    'muçarela',
+    'tomate',
+    'presunto',
+    'apresuntado',
+    'margarina'
 ]
 ```

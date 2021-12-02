@@ -6,6 +6,8 @@ const batataGratinadaInput = require('./mockData/batata-gratinada-input.json');
 const batataGratinadaOutput = require('./mockData/batata-gratinada-output.json');
 const medalhaoMignonInput = require('./mockData/medalhao-mignon-input.json');
 const medalhaoMignonOutput = require('./mockData/medalhao-mignon-output.json');
+const receitaDoReadmeInput = require('./mockData/receita-do-readme-input.json');
+const receitaDoReadmeOutput = require('./mockData/receita-do-readme-output.json');
 
 describe('Sociable Unit Tests', () => {
   context('Recipes Success Tests', () => {
@@ -22,6 +24,11 @@ describe('Sociable Unit Tests', () => {
     it('Medalhao Mignon', () => {
       const result = processarIngredientes(medalhaoMignonInput);
       expect(result).to.deep.equal(medalhaoMignonOutput);
+    });
+
+    it('Receita do Readme', () => {
+      const result = processarIngredientes(receitaDoReadmeInput);
+      expect(result).to.deep.equal(receitaDoReadmeOutput);
     });
   });
 
