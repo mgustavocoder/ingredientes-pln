@@ -14,12 +14,11 @@
   "scripts": {
     "test": "nyc ./node_modules/.bin/mocha tests/**/*.test.js",
     "test:watch": "./node_modules/.bin/mocha tests/**/*.test.js --watch",
-    "lint": "npx eslint .",
-    "prepare": "husky install"
+    "lint": "npx eslint ."
   },
   "nyc": {
     "all": true,
-    "check-coverage": false,
+    "check-coverage": true,
     "branches": 100,
     "lines": 100,
     "functions": 100,

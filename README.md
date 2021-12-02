@@ -35,7 +35,7 @@ const tokens = processarIngredientes([...])
     '200g de queijo muçarela ralado',
     '1 tomate picado',
     '150g de presunto ou apresuntado em cubos',
-    'Margarina para untar"
+    'Margarina para untar'
 ]
 ```
 **Exemplo de saída:**

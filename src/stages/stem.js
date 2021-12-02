@@ -9,15 +9,6 @@ function getListOfObjects(ingredientsList) {
   return result.flat();
 }
 
-function getListOfRadix(ingredientsList) {
-  const result = ingredientsList.map((line) => line.split(' ').map((word) => {
-    const radix = natural.PorterStemmerPt.stem(word);
-    return radix;
-  }).join(' '));
-  return result;
-}
-
 module.exports = {
   getListOfObjects,
-  getListOfRadix,
 };

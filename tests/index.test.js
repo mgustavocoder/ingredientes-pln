@@ -11,17 +11,17 @@ describe('Sociable Unit Tests', () => {
   context('Recipes Success Tests', () => {
     it('Moqueca de Peixe test', () => {
       const result = processarIngredientes(moquecaPeixeInput);
-      expect(result).to.equal(moquecaPeixeOutput);
+      expect(result).to.deep.equal(moquecaPeixeOutput);
     });
 
     it('Batata Gratinada', () => {
       const result = processarIngredientes(batataGratinadaInput);
-      expect(result).to.equal(batataGratinadaOutput);
+      expect(result).to.deep.equal(batataGratinadaOutput);
     });
 
     it('Medalhao Mignon', () => {
       const result = processarIngredientes(medalhaoMignonInput);
-      expect(result).to.equal(medalhaoMignonOutput);
+      expect(result).to.deep.equal(medalhaoMignonOutput);
     });
   });
 
