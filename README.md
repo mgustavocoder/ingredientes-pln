@@ -1,5 +1,5 @@
 ## Descrição:
-Extrai tokens de uma lista de ingredientes em linguagem natural tirado de receitas da culinária brasileira.
+Módulo NPM - Extrai tokens de uma lista de ingredientes em linguagem natural da culinária brasileira.
 
 **Required**
 ```
