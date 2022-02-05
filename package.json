@@ -16,26 +16,6 @@
     "test:watch": "./node_modules/.bin/mocha tests/**/*.test.js --watch",
     "lint": "npx eslint ."
   },
-  "nyc": {
-    "all": true,
-    "check-coverage": true,
-    "branches": 100,
-    "lines": 100,
-    "functions": 100,
-    "statements": 100,
-    "reporter": [
-      "text",
-      "text-summary"
-    ],
-    "include": [
-      "**/*.js"
-    ],
-    "exclude": [
-      "**/node_modules/**",
-      "**/tests/**",
-      "**/coverage/**"
-    ]
-  },
   "dependencies": {
     "lodash.isempty": "^4.4.0",
     "natural": "^5.0.1"
