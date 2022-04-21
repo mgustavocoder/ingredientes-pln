@@ -7,18 +7,21 @@ const removeEmptyToken = require('./src/stages/removeEmptyToken');
 const removeDuplication = require('./src/stages/removeDuplication');
 const tokens = require('./src/allowlist/tokens');
 
-function isInvalidInput(listOfNaturalLanguageIngredients) {
-  return !listOfNaturalLanguageIngredients
-    || typeof listOfNaturalLanguageIngredients !== 'object'
-    || listOfNaturalLanguageIngredients.length <= 0;
+function isInvalidInput(input) {
+  return (!input
+    || typeof input !== 'object'
+    || input.length <= 0)
+    && typeof input !== 'string';
 }
 
-module.exports = (listOfNaturalLanguageIngredients) => {
-  if (isInvalidInput(listOfNaturalLanguageIngredients)) {
-    return [];
+module.exports = (input) => {
+  if (isInvalidInput(input)) {
+    throw Error('Invalid Input!');
   }
 
-  const nomalizedList = normalize(listOfNaturalLanguageIngredients);
+  const listofingredients = typeof input === 'string' ? [input] : input;
+
+  const nomalizedList = normalize(listofingredients);
   const tokenList = tokenize(nomalizedList);
   const tokenObjectList = stem.getListOfObjects(tokenList);
 

@@ -30,22 +30,48 @@ describe('Sociable Unit Tests', () => {
       const result = processarIngredientes(receitaDoReadmeInput);
       expect(result).to.deep.equal(receitaDoReadmeOutput);
     });
+
+    it('Abacate', () => {
+      const result = processarIngredientes('abacate');
+      expect(result).to.deep.equal(['abacate']);
+    });
   });
 
   context('Invalid Inputs Tests', () => {
-    it('Given an empty list should return an empty list', () => {
-      const result = processarIngredientes([]);
-      expect(result).to.deep.equal([]);
+    it('Given an empty list should throws error', () => {
+      try {
+        processarIngredientes([]);
+        expect.fail();
+      } catch (error) {
+        expect(error.message).to.equal('Invalid Input!');
+      }
     });
 
-    it('Given an undefined input should return an empty list', () => {
-      const result = processarIngredientes(undefined);
-      expect(result).to.deep.equal([]);
+    it('Given an undefined input should throws error', () => {
+      try {
+        processarIngredientes(undefined);
+        expect.fail();
+      } catch (error) {
+        expect(error.message).to.equal('Invalid Input!');
+      }
     });
 
-    it('Given a null input should return an empty list', () => {
-      const result = processarIngredientes(null);
-      expect(result).to.deep.equal([]);
+    it('Given a null input should throws error', () => {
+      try {
+        processarIngredientes(null);
+        expect.fail();
+      } catch (error) {
+        expect(error.message).to.equal('Invalid Input!');
+      }
+    });
+
+    it('Given a number input should throws error', () => {
+      try {
+        processarIngredientes(null);
+        expect.fail();
+      } catch (error) {
+        expect(error.message).to.equal('Invalid Input!');
+      }
     });
   });
 });
