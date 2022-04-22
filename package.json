@@ -1,6 +1,6 @@
 {
   "name": "ingredientes-pln",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Extrai tokens de uma lista de ingredientes em linguagem natural tirado de receitas da culinária brasileira.",
   "main": "index.js",
   "author": "mgustavocoder@gmail.com",
